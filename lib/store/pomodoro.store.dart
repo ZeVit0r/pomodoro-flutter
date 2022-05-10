@@ -20,6 +20,14 @@ abstract class _PomodoroStore with Store {
   @observable
   int tempoDescanso = 1;
 
+  @observable
+  String teste = 'teste';
+
+  @action
+  void teste2() {
+    teste = 'teste2';
+  }
+
   @action
   void iniciar() {
     iniciado = true;
